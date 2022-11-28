@@ -112,58 +112,28 @@ img {
 
 h1 {
   font-size: 56px;
-  color: burlywood;
+  color: rgb(167, 147, 127);
   text-align: center;
   font-family: "poppins";
   padding-top: 2%;
+  grid-area: 1/1;
+  padding-left: 10px;
 }
 
 h2 {
-  font-size: 25px;
-  color: rgb(164, 152, 137);
+  font-size: 48px;
+  color: rgb(132, 123, 112);
   /* text-align: center; */
   font-family: "poppins";
+  padding-left: 12px;
 }
 
 p {
-  font-size: 15px;
-  color: rgb(164, 152, 137);
+  font-size: 20px;
+  color: rgb(143, 129, 114);
   /* text-align: center; */
   font-family: "oswald";
 }
-
-/* .img1 {
-  width: 80%;
-  display: block;
-  margin-right: 10%;
-  margin-left: 9.5%;
-  padding: 2%;
-} */
-
-/* .button {
-  color: #e5e3da;
-  background-color: #8b948b;
-  border: none;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: "poppins";
-  box-shadow: 5px 5px 5px white;
-  display: flex;
-  margin: 10px;
-}
-
-.button:active {
-  background-color: #8b948b;
-  box-shadow: 5px 5px 5px;
-  transform: translateY(4px);
-}
-
-.index1 {
-  display: flex;
-  justify-content: center;
-} */
 
 @media (min-width: 600px) {
   .grid_2-1 {
@@ -198,7 +168,15 @@ p {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height: auto;
-    padding: 5%;
+    padding: 3%;
+  }
+
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+    height: auto;
+    padding: 5px;
   }
 
   .grid_1 {
@@ -206,6 +184,23 @@ p {
     width: 100%;
     height: auto;
     padding: 2%;
+  }
+  h2 {
+    font-size: 48px;
+    color: rgb(132, 123, 112);
+    /* text-align: center; */
+    font-family: "poppins";
+    padding-left: 12px;
+  }
+
+  .p2 {
+    font-size: 28px;
+    color: rgb(143, 129, 114);
+    /* text-align: center; */
+    font-family: "oswald";
+    grid-area: 1/1;
+    padding-top: 80px;
+    padding-left: 12px;
   }
 }
 
@@ -355,8 +350,10 @@ p {
 
 .container {
   display: grid;
-  place-items: center;
+  place-items: center start;
   padding: 2%;
+  /* width: 950px; */
+  aspect-ratio: 16/9;
 }
 
 .img7 {
@@ -364,13 +361,18 @@ p {
   height: auto;
 }
 
+/* .img7,
+.tekst {
+  grid-area: 1/1;
+} */
+
 .img7,
-h2 {
+.p2 {
   grid-area: 1/1;
 }
 
 .img7,
-p {
+.tekst {
   grid-area: 1/1;
 }
 
@@ -378,4 +380,24 @@ p {
   width: 100%;
   height: auto;
   padding: 2%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.tekst {
+  font-size: 55px;
+  color: rgb(154, 133, 113);
+  /* text-align: center; */
+  font-family: "poppins";
+  padding-left: 12px;
+  grid-area: 1/1;
 }
